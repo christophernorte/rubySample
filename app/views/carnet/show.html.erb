@@ -1,0 +1,19 @@
+<h1>Liste des personnes</h1>
+<hr>
+<%
+if @personnes.blank? then
+%>
+    Notre carnet est vide
+    <%
+      else
+      @personnes.each {
+          |personne|
+        %>
+        <p>
+          <%= personne.prenom %>, <%= personne.nom %>
+          ,<%= personne.telephone %> ,<%= personne.adresse%>
+          </p>
+        <%
+          }
+          end
+    %>
