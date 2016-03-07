@@ -1,7 +1,7 @@
 <h1>Liste des personnes</h1>
 <hr>
 <%
-if @personnes.blank? then
+  if @personnes.blank? then
 %>
     Notre carnet est vide
     <%
@@ -10,8 +10,7 @@ if @personnes.blank? then
           |personne|
         %>
         <p>
-          <%= personne.prenom %>, <%= personne.nom %>
-          ,<%= personne.telephone %> ,<%= personne.adresse%>
+          <%= personne %>
           </p>
         <%
           }
